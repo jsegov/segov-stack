@@ -7,7 +7,8 @@ Jonathan Segovia's skills, written once and shipped as one plugin to Claude Code
 1. `npm run new-skill -- <name> --description "<what it does and when to use it>"`. Add `--user-invoked` for a skill that runs only when the user names it. Add `--draft` to start it in `drafts/`, which never ships; ship it later by moving its folder into `skills/`.
 2. Write the skill, following the rules below.
 3. Add a row for it to the Skills table in `README.md`: what it does, and "Runs only when you name it." if it is user-invoked.
-4. Run `npm run check`. The skill is done when it passes with all three CLIs installed.
+4. Bump the minor version in `.claude-plugin/plugin.json` (see Scope).
+5. Run `npm run check`. The skill is done when it passes with all three CLIs installed.
 
 ## Writing a skill
 
@@ -30,7 +31,7 @@ A user-invoked skill carries one flag per harness, and the three always change t
 
 The plugin ships skills only, with no agents, hooks, or commands, so every harness gets the same thing. Skill folders stay flat under `skills/`; group related skills with a shared name prefix (ADR 0001).
 
-The version lives only in `.claude-plugin/plugin.json`. Bump it when releasing.
+The version lives only in `.claude-plugin/plugin.json`. Every install pulls from `main`, so merging a change to a skill is a release, and Claude Code keeps serving its cached copy until the version changes. Bump the version in the same PR as the change: minor for a new skill, patch for a fix.
 
 ## Scripts
 
