@@ -1,6 +1,6 @@
 {
   "name": "segov-stack",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Jonathan Segovia's agent skills for Claude Code, Codex, and opencode.",
   "author": {
     "name": "Jonathan Segovia",
