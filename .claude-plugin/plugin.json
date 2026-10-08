@@ -1,0 +1,14 @@
+{
+  "name": "segov-stack",
+  "version": "0.1.0",
+  "description": "Jonathan Segovia's agent skills for Claude Code, Codex, and opencode.",
+  "author": {
+    "name": "Jonathan Segovia",
+    "url": "https://github.com/jsegov"
+  },
+  "homepage": "https://github.com/jsegov/segov-stack",
+  "repository": "https://github.com/jsegov/segov-stack",
+  "license": "MIT",
+  "keywords": ["skills", "agent-skills", "claude-code", "codex", "opencode"],
+  "skills": "./skills/"
+}

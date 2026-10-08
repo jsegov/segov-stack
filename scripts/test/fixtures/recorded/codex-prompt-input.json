@@ -1,0 +1,12 @@
+[
+  {
+    "type": "message",
+    "role": "developer",
+    "content": [
+      {
+        "type": "input_text",
+        "text": "<skills_instructions>\n## Skills\nA skill is a set of local instructions to follow that is stored in a `SKILL.md` file. Below is the list of skills that can be used. Each entry includes a name, description, and a short path that can be expanded into an absolute path using the skill roots table.\n### Skill roots\n- `r0` = `/tmp/codex-home/.codex/skills/.system`\n- `r1` = `/tmp/codex-home/.codex/plugins/cache/segov-fixture-market`\n### Available skills\n- imagegen: Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas. (file: r0/imagegen/SKILL.md)\n- segov-fixture:fixture-model: Fixture skill the model may invoke on its own. Use only in segov-stack's script tests. (file: r1/segov-fixture/0.0.0/skills/fixture-model/SKILL.md)\n</skills_instructions>"
+      }
+    ]
+  }
+]

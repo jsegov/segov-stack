@@ -1,0 +1,6 @@
+{
+  "name": "segov-fixture",
+  "version": "0.0.0",
+  "description": "Test fixture for segov-stack's scripts.",
+  "author": { "name": "Jonathan Segovia" }
+}

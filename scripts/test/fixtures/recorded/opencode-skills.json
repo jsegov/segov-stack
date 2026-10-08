@@ -1,0 +1,43 @@
+{
+  "location": {
+    "directory": "/tmp/opencode-home/workspace"
+  },
+  "data": [
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "description": "Use this skill for any question about OpenCode itself, including how OpenCode works, using or configuring it, migrating from V1 to V2, troubleshooting it, developing plugins or integrations, using the OpenCode SDK, clients, server, or API, and contributing to the OpenCode codebase. Also use it for OpenCode agents, commands, skills, tools, permissions, MCP servers, providers, models, themes, keybinds, formatters, the CLI, TUI, desktop app, and web app.",
+      "path": "/builtin/opencode.md",
+      "content": "# OpenCode\n\nUse this guide as the starti"
+    },
+    {
+      "id": "report",
+      "name": "Report",
+      "description": "Use when the user wants to report an opencode issue or bug. Collect standard diagnostics, add user-specific reproduction context, and publish the issue with GitHub CLI.",
+      "path": "/builtin/report.md",
+      "content": "<!--\n  Built-in skill. Name and descript"
+    },
+    {
+      "id": "probe-skill",
+      "name": "probe-skill",
+      "description": "Probe skill.",
+      "path": "/tmp/opencode-home/.agents/skills/probe-skill/SKILL.md",
+      "content": "Body.\n"
+    },
+    {
+      "id": "probe-user",
+      "name": "probe-user",
+      "description": "User probe.",
+      "autoinvoke": false,
+      "path": "/tmp/opencode-home/.agents/skills/probe-user/SKILL.md",
+      "content": "Body.\n"
+    },
+    {
+      "id": "leaked",
+      "name": "leaked",
+      "description": "From the real home.",
+      "path": "/Users/someone/.agents/skills/leaked/SKILL.md",
+      "content": "x"
+    }
+  ]
+}

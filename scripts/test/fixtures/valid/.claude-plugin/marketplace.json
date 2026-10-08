@@ -1,0 +1,6 @@
+{
+  "name": "segov-fixture-market",
+  "owner": { "name": "Jonathan Segovia" },
+  "description": "Test fixture marketplace for segov-stack's scripts.",
+  "plugins": [{ "name": "segov-fixture", "source": "./", "description": "Test fixture for segov-stack's scripts." }]
+}

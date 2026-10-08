@@ -1,0 +1,31 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Install harness CLIs (pinned)
+        run: |
+          npm install -g @anthropic-ai/claude-code@2.1.294 @openai/codex@0.162.0
+          curl -fsSL https://opencode.ai/install | bash -s -- --version 2.0.22 --no-modify-path
+          echo "$HOME/.opencode/bin" >> "$GITHUB_PATH"
+      - run: claude --version && codex --version && opencode --version
+      - run: npm test
+      - run: npm run lint
+      - run: npm run validate
+      # Claude Code discovery needs a model call and an API key; run it locally with `npm run discover`.
+      - run: node scripts/discover.mjs --harness codex,opencode

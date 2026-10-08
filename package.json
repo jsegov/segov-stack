@@ -1,0 +1,23 @@
+{
+  "name": "segov-stack",
+  "private": true,
+  "description": "Jonathan Segovia's agent skills for Claude Code, Codex, and opencode.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"scripts/test/*.test.mjs\"",
+    "lint": "node scripts/lint-skills.mjs",
+    "validate": "claude plugin validate . --strict",
+    "discover": "node scripts/discover.mjs",
+    "check": "npm test && npm run lint && npm run validate && npm run discover",
+    "link": "node scripts/link-skills.mjs",
+    "unlink": "node scripts/link-skills.mjs --unlink",
+    "new-skill": "node scripts/new-skill.mjs"
+  },
+  "devDependencies": {
+    "yaml": "2.9.1"
+  }
+}

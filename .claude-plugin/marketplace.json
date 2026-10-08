@@ -1,0 +1,15 @@
+{
+  "name": "jsegov",
+  "owner": {
+    "name": "Jonathan Segovia",
+    "url": "https://github.com/jsegov"
+  },
+  "description": "Jonathan Segovia's plugins.",
+  "plugins": [
+    {
+      "name": "segov-stack",
+      "source": "./",
+      "description": "Jonathan Segovia's agent skills for Claude Code, Codex, and opencode."
+    }
+  ]
+}

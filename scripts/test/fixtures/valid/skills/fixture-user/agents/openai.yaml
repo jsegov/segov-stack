@@ -1,0 +1,5 @@
+interface:
+  display_name: Fixture User
+  short_description: Fixture skill that only runs when the user names it.
+policy:
+  allow_implicit_invocation: false
