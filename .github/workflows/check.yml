@@ -12,8 +12,8 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -21,7 +21,7 @@ jobs:
       - name: Install harness CLIs (pinned)
         run: |
           npm install -g @anthropic-ai/claude-code@2.1.294 @openai/codex@0.162.0
-          curl -fsSL https://opencode.ai/install | bash -s -- --version 2.0.22 --no-modify-path
+          curl -fsSL https://opencode.ai/v2/install | bash -s -- --version 2.0.22 --no-modify-path
           echo "$HOME/.opencode/bin" >> "$GITHUB_PATH"
       - run: claude --version && codex --version && opencode --version
       - run: npm test
