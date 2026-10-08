@@ -1,0 +1,5 @@
+interface:
+  display_name: Write
+  short_description: Write or rewrite a Markdown document for human readers in Jonathan's style.
+policy:
+  allow_implicit_invocation: false
